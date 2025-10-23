@@ -10,7 +10,12 @@ public class Chien extends Animal {
     }
 
     @Override
-    public String soinQuotidien() {
-        return "Brosser";
+    public String soinQuotidien(Employe employe) {
+        return employe.getPrenom() + " " + employe.getNom() + " Brosse " + super.getNom() + ". ";
+    }
+
+    @Override
+    public String toString() {
+        return "Je suis un chien, " + super.toString();
     }
 }

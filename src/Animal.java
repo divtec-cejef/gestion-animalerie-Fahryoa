@@ -10,5 +10,14 @@ public abstract class Animal {
     }
 
     public abstract String bruit();
-    public abstract String soinQuotidien();
+    public abstract String soinQuotidien(Employe employe);
+
+    public String getNom() {
+        return nom;
+    }
+
+    @Override
+    public String toString() {
+        return "je m'appelle " + nom + ", j'ai " + age + " et mon état de santé est : " + etatDeSante.getNom();
+    }
 }

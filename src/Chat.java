@@ -10,7 +10,12 @@ public class Chat extends Animal {
     }
 
     @Override
-    public String soinQuotidien() {
-        return "Caresser";
+    public String soinQuotidien(Employe employe) {
+        return employe.getPrenom() + " " + employe.getNom() + " Caresse " + super.getNom() + ". ";
+    }
+
+    @Override
+    public String toString() {
+        return "Je suis un chat, " + super.toString();
     }
 }

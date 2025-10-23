@@ -10,7 +10,12 @@ public class Lapin extends Animal {
     }
 
     @Override
-    public String soinQuotidien() {
-        return "Nettoyer";
+    public String soinQuotidien(Employe employe) {
+        return employe.getPrenom() + " " + employe.getNom() + " Nettoye " + super.getNom() + ". ";
+    }
+
+    @Override
+    public String toString() {
+        return "Je suis un lapin, " + super.toString();
     }
 }
