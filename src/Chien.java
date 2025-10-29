@@ -10,8 +10,12 @@ public class Chien extends Animal {
     }
 
     @Override
-    public String soinQuotidien(Employe employe) {
-        return employe.getPrenom() + " " + employe.getNom() + " Brosse " + super.getNom() + ". ";
+    public void soinQuotidien(Employe employe) {
+        if (employe.getRole().equals("Soigneur")) {
+            ConsoleIO.afficherUnString(employe.getPrenom() + " " + employe.getNom() + " Caresse " + super.getNom() + ". ");
+        } else {
+            ConsoleIO.afficherUnString("L'employe n'a pas les compétences requise");
+        }
     }
 
     @Override

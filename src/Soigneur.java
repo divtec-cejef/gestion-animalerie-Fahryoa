@@ -5,7 +5,7 @@ public class Soigneur extends Employe {
     }
 
     @Override
-    public String effectuerUneTache(Animal animal) {
-        return animal.soinQuotidien(this);
+    public void effectuerUneTache(Animal animal) {
+        animal.soinQuotidien(this);
     }
 }

@@ -6,12 +6,19 @@ public class Main {
         System.out.println(employe1);
 
         Chien chien = new Chien("Edouard", 14, EtatDeSante.SOIN_INTENSIF);
-        System.out.println(chien.soinQuotidien(employe1));
-        System.out.println(chien.bruit());
-        System.out.println(chien);
+        chien.soinQuotidien(employe2);
+        ConsoleIO.afficherUnString(chien.bruit());
+        ConsoleIO.afficherUnString(chien.toString());
 
-        System.out.println(employe1.effectuerUneTache(chien));
-        System.out.println(employe2.effectuerUneTache(chien));
+        employe1.effectuerUneTache(chien);
+        employe2.effectuerUneTache(chien);
+
+        ConsoleIO.afficherUnString(chien.toString());
+        chien.soigner(employe2);
+        chien.soigner(employe1);
+        chien.soigner(employe1);
+        ConsoleIO.afficherUnString(chien.toString());
 
     }
 }
+

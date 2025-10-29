@@ -11,7 +11,7 @@ public abstract class Employe {
         this.role = role;
     }
 
-    public abstract String effectuerUneTache(Animal animal);
+    public abstract void effectuerUneTache(Animal animal);
 
     public String getNom() {
         return nom;
@@ -19,6 +19,10 @@ public abstract class Employe {
 
     public String getPrenom() {
         return prenom;
+    }
+
+    public String getRole() {
+        return role;
     }
 
     @Override

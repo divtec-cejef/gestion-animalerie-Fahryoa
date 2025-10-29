@@ -5,7 +5,7 @@ public class Veterinaire extends Employe {
     }
 
     @Override
-    public String effectuerUneTache(Animal animal) {
-        return "Je soigne " + animal.getNom() + ". ";
+    public void effectuerUneTache(Animal animal) {
+        animal.soigner(this);
     }
 }
