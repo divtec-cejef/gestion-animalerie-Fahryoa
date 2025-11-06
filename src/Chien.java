@@ -12,7 +12,7 @@ public class Chien extends Animal {
     @Override
     public void soinQuotidien(Employe employe) {
         if (employe.getRole().equals("Soigneur")) {
-            ConsoleIO.afficherUnString(employe.getPrenom() + " " + employe.getNom() + " Caresse " + super.getNom() + ". ");
+            ConsoleIO.afficherUnString(employe.getPrenom() + " " + employe.getNom() + " Promène " + super.getNom() + ". ");
         } else {
             ConsoleIO.afficherUnString("L'employe n'a pas les compétences requise");
         }

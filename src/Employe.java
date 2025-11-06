@@ -2,13 +2,12 @@ public abstract class Employe {
     private String nom;
     private String prenom;
     private int salaire;
-    private String role;
+    protected String role;
 
-    public Employe(String nom, String prenom, int salaire, String role) {
+    public Employe(String nom, String prenom, int salaire) {
         this.nom = nom;
         this.prenom = prenom;
         this.salaire = salaire;
-        this.role = role;
     }
 
     public abstract void effectuerUneTache(Animal animal);
